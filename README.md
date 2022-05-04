@@ -2,6 +2,8 @@
 
 > This Rails budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. 
 
+[Loom Video Demo](https://www.loom.com/share/a7bb24188d6b414493864c0481e790d7)
+
 ### Deployment
 
 [Live Demo](https://cryptic-cove-58855.herokuapp.com/)
