@@ -1,83 +1,113 @@
-# Recipe-App
+# BADGET-APP
 
-This Rails budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. 
+> This Rails budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. 
+
+### Deployment
+
+[Live Demo](https://cryptic-cove-58855.herokuapp.com/)
+
+This API is made of three models:
+- User model
+- Ability model
+- Category model
+- Expense_category model
+- Expense Model
+
+The API has the following endpoints:
+
+
+allow user to authenticate and return a token
+
+`POST /users/sign_in`
+
+allows user to create an account
+
+`POST /users/sign_up`
+
+Edit user informations
+
+`PUT /users/edit`
+
+returns all the items
+
+`GET / categories`
+
+allows admin to create an item
+
+`POST /categories/new`
+
+returns a specific item
+
+`GET /categories/id`
+
+allows admin to add transaction to categorie
+
+`PUT /categories/id/expense/new`
+
+allows admin to get transaction of a categorie
+
+`PUT /categories/id/expense`
+
+allows admin to delete an item
+
+`DELETE /categories/id`
 
 ## Built With
 
-- Ruby
-- Ruby on Rails
-- Postgresql
-- Bootstrap
+- Rails
+- Ruby 
+- Heroku
 
 ## Getting Started
 
-**To get a local copy up and running follow these simple example steps:**
+Here are the steps to follow in order to get this project on your local computer.
 
 ### Prerequisites
 
-- [Ruby](https://www.ruby-lang.org/en/)
-- [Rails](https://gorails.com/)
+`rails v7.0.2 +`
+
+`ruby v3.0.2 +`
 
 ### Setup
 
-- Make sure you have Ruby on Rails set up properly on your computer
-
-``` sh
-  git git@github.com:vic778/rails-budget-app
-```
+clone this repo by typing `git clone https://github.com/vic778/rails-budget-app`
 
 ### Install
 
-```sh
-  bundle install
-```
+install the dependencies by typing `bundle install`
 
-### Run
-
-```
-  rails db: create
-```
-
-```
-  rails db:migrate
-```
-
-```
-  rails s
-```
-
-### Test
-
-```sh
-  rspec
-```
-
-### Rubocop
-
-```sh
-    rubocop --color
-```
 ### Usage
 
-To start recipe app you need to first `signup`
+start the local server by running `rails s`
 
-## Authors
+### Testing
+
+run the tests by typing `bundle exec rspec`
+
+
+## Author
 
 👤 **Victor Barh**
 
 - GitHub: [@Vvic778](https://github.com/vic778)
 - Twitter: [@victoirBarh](https://twitter.com/)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/victoir-barh)
+
+
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues and feature requests are welcome!
 
-- Feel free to check the [issues page](https://github.com/vic778/rails-budget-app/issues).
+Feel free to check the [issues page](issues/).
 
 ## Show your support
 
-- Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse for giving us this chance
+- Hat tip to anyone whose code was used !
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
