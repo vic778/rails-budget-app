@@ -23,7 +23,7 @@ This Rails budget app is a mobile web application where you can manage your budg
 - Make sure you have Ruby on Rails set up properly on your computer
 
 ``` sh
-  git git@github.com:vic778/Recipe-app
+  git git@github.com:vic778/rails-budget-app
 ```
 
 ### Install
@@ -51,6 +51,12 @@ This Rails budget app is a mobile web application where you can manage your budg
 ```sh
   rspec
 ```
+
+### Rubocop
+
+```sh
+    rubocop --color
+```
 ### Usage
 
 To start recipe app you need to first `signup`
@@ -66,7 +72,7 @@ To start recipe app you need to first `signup`
 
 Contributions, issues, and feature requests are welcome!
 
-- Feel free to check the [issues page](https://github.com/vic778/Recipe-app/issues).
+- Feel free to check the [issues page](https://github.com/vic778/rails-budget-app/issues).
 
 ## Show your support
 
