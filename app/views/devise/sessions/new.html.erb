@@ -1,0 +1,23 @@
+<h2 class="flex justify-center text-gray-200 tracking-wider bg-[#3778c2] w-full py-3">LOG IN</h2>
+
+<div class='y-3/4 text-lg'>
+  <%= form_for(resource, as: resource_name, data: {turbo: false}, url: session_path(resource_name)) do |f| %>
+    <div class="mt-12 text-[#434b54]">
+      <div class="field">
+        <%= f.label :email %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "text-gray-400 block border border-grey-light w-full p-2 rounded mb-4" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "current-password", class: "text-gray-400 block border border-grey-light w-full p-2 rounded mb-4" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Log in", class: "w-full text-center py-3 rounded bg-indigo-600 text-white hover:bg-green-dark focus:outline-none" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= render "devise/shared/links" %>
